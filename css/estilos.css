@@ -1,6 +1,10 @@
+/*font-family: 'Lobster', cursive;*/
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 body{
     background-color: #eee;
     color: #333;
+    font-family: 'Lobster', cursive;
+    
 }
 a{
     text-decoration: none;
@@ -11,7 +15,7 @@ a:hover{
     color:darkblue;
 }
 img{
-    width: 100%;
+    width: 50%;
 }
 #navbar {
     background-color: #000;
@@ -22,6 +26,7 @@ img{
     width: 100%;
     z-index: 100;
     overflow: hidden;
+
 }
 #navbar ul{
     list-style-type: none;
@@ -34,6 +39,11 @@ img{
 #navbar li{
     float: left;
 }
+
+#navbar li.active a{
+    color: red;
+}
+
 #navbar li a{
     padding: 20px;
     display: inline-block;
@@ -45,7 +55,28 @@ img{
 #navbar li a:hover{
     background-color: coral;
     color: black;
+    cursor: pointer;
 }
+
+form{
+    max-width: 750px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin:0 auto;
+}
+form div{
+    padding: 15px;
+}
+input {
+    width: 90%;
+    display: block;
+}
+button {
+    width: 90%;
+    height: 50px;
+    padding: 15px;
+}
+
 .myicono {
     color:aliceblue;
     font-size: 1.5em;
@@ -89,6 +120,7 @@ img{
     height: 100px;
     padding: 25px;
 }
+
 @media screen and (max-width: 820px){
     #content{
         padding: 0;
@@ -117,6 +149,7 @@ img{
         padding: 0;
     }
 }
+
 @media screen and (max-width: 600px){
     #content{
         width: auto;
@@ -154,5 +187,6 @@ img{
     .myicono{
         display: block;
         text-align: right;
+        cursor: pointer;
     }
 }
